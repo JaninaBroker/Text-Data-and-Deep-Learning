@@ -1,0 +1,13 @@
+Exercise 1, Lecture 1.
+https://course.fast.ai/start_gcp.html#step-3-create-an-instance
+
+You are at Step 3, and got the following error:
+
+ERROR: (gcloud.compute.instances.create) Could not fetch resource:
+- Quota 'GPUS_ALL_REGIONS' exceeded. Limit: 0.0 globally.
+
+You need to start over after Google has confirmed your quota has been increased:
+  export IMAGE_FAMILY="pytorch-latest-gpu" # or "pytorch-latest-cpu" for non-GPU instances
+  export ZONE="us-west1-b"
+  export INSTANCE_NAME="my-fastai-instance"
+  export INSTANCE_TYPE="n1-highmem-8" # budget: "n1-highmem-4"
