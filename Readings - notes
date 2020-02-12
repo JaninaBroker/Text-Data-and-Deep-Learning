@@ -1,0 +1,4 @@
+http://neuralnetworksanddeeplearning.com/chap1.html
+- Two important types of artifical neuron: the perceptron and the sigmoid neuron
+- The standard learning algorithm for neural networks known as stochastic gradient descent.
+
