@@ -1,3 +1,6 @@
+https://docs.anaconda.com/ae-notebooks/user-guide/adv-tasks/work-with-environments/
+ https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment 
+
 CURRENT ENVIRONMENTS:
 conda info --envs
 
@@ -27,4 +30,4 @@ You cannot rename an environment, but you can clone it, give it the name you'd l
 5. conda create --name new_name --clone old_name
 conda remove --name old_name --all # or its alias: `conda env remove --name old_name`
    
- https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment 
+
