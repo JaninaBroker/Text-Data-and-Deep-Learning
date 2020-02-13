@@ -1,3 +1,7 @@
+CURRENT ENVIRONMENTS:
+conda info --envs
+
+NEW ENVIRONMENT
 To create a new environment where packages are shielded from potential future incompatability. Open Anaconda Prompt.
 1. Run 
    conda create -n environment_name
