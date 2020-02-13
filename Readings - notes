@@ -1,4 +1,14 @@
 http://neuralnetworksanddeeplearning.com/chap1.html
 - Two important types of artifical neuron: the perceptron and the sigmoid neuron
+  PERCEPTRON
+  -Takes multiple binary inputs and produces ont binary output
+  output={0 if ∑jwjxj≤ threshold
+         {1 if ∑jwjxj> threshold
+  where x is a binary input and w is a weight, so x is 0 or 1 depending on if its weighted sum is less than or greater than some threshold.
+  -- Pereceptrons can be thought of as method of weighing evidence to make decisions. 
+  We can move the threshold rule to teh oter side of the inequality sign, and call it a bias: wx+b≤0 and wx+b>0. Think of the bias as measuring 
+  how easy it is to get the perecptron to output a 1. big bias - high likelihood of 1. Negative bias - hard to "fire"; low likelihood of 1. 
+  
+  
 - The standard learning algorithm for neural networks known as stochastic gradient descent.
 
