@@ -7,27 +7,34 @@ conda info --envs
 NEW ENVIRONMENT
 To create a new environment where packages are shielded from potential future incompatability. Open Anaconda Prompt.
 1. Run 
-   conda create -n environment_name
-   source activate environment_name
+    conda create -n environment_name
+    source activate environment_name
 Now there will be a (environment_name) in your command prompt (I named my environment gdal_test): 
    (gdal_test) C:\Users\Janina>
-2. conda install package_name
+   
+2. Install packages
+     conda install package_name
 
-3. conda activate 
-To simply return to the base environment, it's better to call conda activate with no environment specified,
+3. To simply return to the base environment, it's better to call conda activate with no environment specified,
 rather than to try to deactivate. 
+    conda activate 
 
-To access pip install (not all packages are available using conda):
-3. conda install pip
+4. Install ipykernel & Add your virtual environment to Jupyter:
+    pip install --user ipykernel
+    python -m ipykernel install --user --name=myenv
+https://janakiev.com/blog/jupyter-virtual-envs/
+
+5. To access pip install (not all packages are available using conda) 
+    conda install pip 
 Now you can use pip install package_name inside your environment
 
-To use your environment with all of the packages in Jupyter notebook, you must maske sure that it's runing the right kernel. 
-When you launch Jupyter Notebook, don't launch Jupytrer Notebook (Python 3) - where Python 3 is the kernel, but instead
-4. Search on your computer for jupyter notebook, and launch the one that's named "Jupyter Notebook (environment_name)". Now all your
-packages will be available in Jupyter Notebook.
+6. To use your environment with all of the packages in Jupyter notebook, you must maske sure that it's runing the right kernel. 
+When you launch Jupyter Notebook, don't launch Jupytrer Notebook (Python 3) - where Python 3 is the kernel, 
+but instead search on your computer for jupyter notebook, and launch the one that's named "Jupyter Notebook (environment_name)". 
+Now all your packages will be available in Jupyter Notebook.
 
-You cannot rename an environment, but you can clone it, give it the name you'd like and delete the original environment:
-5. conda create --name new_name --clone old_name
+7. You cannot rename an environment, but you can clone it, give it the name you'd like and delete the original environment:
+    conda create --name new_name --clone old_name
 conda remove --name old_name --all # or its alias: `conda env remove --name old_name`
    
 
