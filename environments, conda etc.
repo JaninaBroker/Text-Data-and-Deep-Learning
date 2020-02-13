@@ -1,0 +1,26 @@
+To create a new environment where packages are shielded from potential future incompatability. Open Anaconda Prompt.
+1. Run 
+   conda create -n environment_name
+   source activate environment_name
+Now there will be a (environment_name) in your command prompt (I named my environment gdal_test): 
+   (gdal_test) C:\Users\Janina>
+2. conda install package_name
+
+3. conda activate 
+To simply return to the base environment, it's better to call conda activate with no environment specified,
+rather than to try to deactivate. 
+
+To access pip install (not all packages are available using conda):
+3. conda install pip
+Now you can use pip install package_name inside your environment
+
+To use your environment with all of the packages in Jupyter notebook, you must maske sure that it's runing the right kernel. 
+When you launch Jupyter Notebook, don't launch Jupytrer Notebook (Python 3) - where Python 3 is the kernel, but instead
+4. Search on your computer for jupyter notebook, and launch the one that's named "Jupyter Notebook (environment_name)". Now all your
+packages will be available in Jupyter Notebook.
+
+You cannot rename an environment, but you can clone it, give it the name you'd like and delete the original environment:
+5. conda create --name new_name --clone old_name
+conda remove --name old_name --all # or its alias: `conda env remove --name old_name`
+   
+ https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment 
