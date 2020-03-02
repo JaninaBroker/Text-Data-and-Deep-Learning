@@ -12,3 +12,30 @@ http://neuralnetworksanddeeplearning.com/chap1.html
   
 - The standard learning algorithm for neural networks known as stochastic gradient descent.
 
+***************
+Neural Networks
+-2 to 8 hidden layers make a neural network "Deep", while 1 makes it "Non-deep".
+- Research suggests that neural networks increase in accuracy with the number of hidden layers. 
+From "7 Types of Neural Network Activation Functions: How to Choose?" at misinglink.ai. See link below:
+https://missinglink.ai/guides/neural-network-concepts/7-types-neural-network-activation-functions-right/?fbclid=IwAR2PanChf6VZtTnrcZdqVtMimeSwIaPs_BQyIL4foCF8epnhpM9_9HbGOs0
+ 
+
+ACTIVATION FUNCTIONS
+Mathematical functions that determine the output of a Neural Network. The activation function is a mathematical "gate" between 
+the input feeding the current neuron and its output going to the next laeýer. The function is attached to each neuron in the network 
+and determines whether it should be activated or not. Activation functions also help normlaize the output of eac neuron to a 
+range between 1 and 0 or between -1 and 1. (from missinglink.ai, same article as above)
+
+
+- Non linear activation functions include 
+    ReLU (Rectified Linear Unit)
+    Leaky ReLU
+    Parametric ReLu
+    Swish
+    Sigmooid/Logistic
+    TanH/Hyperbolic tangent
+    Softmax
+    (https://missinglink.ai/guides/neural-network-concepts/7-types-neural-network-activation-functions-right/)
+    
+    
+    
